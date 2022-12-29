@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>File Application</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+	<h2>File Application</h2>
+	<input type="file" id="real-file" hidden="hidden" />
+	<div class="upfile">
+ 	<button type="button" id="custom-button">CHOOSE A FILE</button>
+  	<span id="custom-text">No file chosen, yet.</span>
+	</div>
+
+	<div class="downfile">
+	<a href="Down.PNG" download="Image downloaded">
+		Download File
+	</a>
+	</div>
+	<script type="text/javascript">
+	const realFileBtn = document.getElementById("real-file");
+	const customBtn = document.getElementById("custom-button");
+	const customTxt = document.getElementById("custom-text");
+
+	customBtn.addEventListener("click", function() {
+	  realFileBtn.click();
+	});
+
+	realFileBtn.addEventListener("change", function() {
+ 	 if (realFileBtn.value) {
+  	  customTxt.innerHTML = realFileBtn.value;
+ 	 } 
+ 	 else {
+ 	   customTxt.innerHTML = "No file chosen, yet.";
+ 	 }
+	});
+	</script>
+
+</body>
+</html>

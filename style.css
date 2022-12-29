@@ -1,0 +1,52 @@
+body{
+	background-image:url(image.PNG);
+	background-size:100% 100%;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+}
+
+.upfile {
+  position:absolute;
+  top: 93%;
+  left:30%;
+}
+
+.downfile {
+  position:absolute;
+  top: 94%;
+  right:30%;
+}
+
+#custom-button {
+  padding: 10px;
+  color: white;
+  background-color: #009578;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#custom-button:hover {
+  background-color: #00b28f;
+}
+
+#custom-text {
+  margin-left: 10px;
+  font-family: sans-serif;
+  color: #aaa;
+}
+
+a {
+  padding: 10px;
+  color: white;
+  background-color: #009578;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: #00b28f;
+}
+
+
